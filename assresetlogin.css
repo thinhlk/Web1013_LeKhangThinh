@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: url(./img/benz.jpg);
+    background-size: cover;
+    height: 743px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+header:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+.logo{
+    flex: 1;
+}
+.logo img{
+    width: 200px;
+    height: 150px;
+}
+.menu{
+    flex: 3;
+    display: flex;
+}
+.menu > li{
+    padding: 0 20px;
+    position: relative;
+}
+.menu > li:hover .chitiet{
+    visibility: visible;
+    top: 60px;
+}
+.chitiet{
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    top: 70px;
+    transition: 0.3s;
+    z-index: 1;
+    background-color: white;
+}
+.menu  li a{
+    font: size 12px;
+    font-weight: 500;
+    display: block ;
+    line-height: 50px ;
+}
+.KHAC{
+    flex: 1;
+    display: flex;
+}
+.KHAC > li{
+    padding: 0 12px;
+}
+.KHAC > li:first-child{
+    position: relative;
+}
+.KHAC > li:first-child input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+}
+.KHAC > li:first-child input i{
+    position: absolute;
+}
+#silder{
+   
+    padding-bottom: 30px;
+    border-bottom: 2px solid black ;
+    overflow:hidden ;
+}
+/* section*/
+.sec{
+    position: relative;
+    top: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box-header{
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.row{
+    margin: 10px;
+}
+.box-content{
+    border: 2px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 250px;
+
+}
+.input-group input{
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 400px;
+    height: 50px;
+    outline: none;
+    margin-top: 20px;
+}
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.rowlast a{
+    color: white;
+}
+.r{
+    border: 1px solid white;
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 140px;
+}
